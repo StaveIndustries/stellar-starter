@@ -1,0 +1,26 @@
+{
+  "name": "stellar-starter",
+  "version": "0.1.0",
+  "description": "Starter template for building Stellar apps",
+  "type": "module",
+  "scripts": {
+    "account:create": "tsx scripts/create-account.ts",
+    "balance": "tsx scripts/show-balance.ts",
+    "payment:send": "tsx scripts/send-payment.ts",
+    "trustline": "tsx scripts/trustline.ts",
+    "multisig": "tsx scripts/multisig.ts",
+    "setup:check": "tsx scripts/setup-check.ts",
+    "test": "vitest run",
+    "frontend:dev": "npm --prefix frontend run dev"
+  },
+  "dependencies": {
+    "@stellar/stellar-sdk": "^13.0.0",
+    "dotenv": "^16.4.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "tsx": "^4.19.0",
+    "typescript": "^5.6.0",
+    "vitest": "^2.1.0"
+  }
+}
